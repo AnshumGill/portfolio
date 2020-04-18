@@ -105,6 +105,10 @@ footer{
     padding: 0.5rem 0.6rem;
 }
 
+.personal-contact{
+    cursor: pointer;
+}
+
 .social-icon:hover{
     color:rgba(255,255,255,1) !important;
 }
