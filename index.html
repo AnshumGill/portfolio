@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi!</title>
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <script src="./static/js/feather.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex flex-column h-100">
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+                <a class="navbar-brand" href="#"><p class="display-4">A.</p></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggle" aria-controls="navToggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navToggle">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link mx-3" href="#projects"><p class="contentText">PROJECTS</p></a>
+                        <a class="nav-item nav-link mx-3" href="./static/Resume.pdf" target="_blank"><p class="contentText">RESUME</p></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+    </header>
+    <main class="d-flex flex-column flex-shrink-0">
+        <div class="d-flex landing container align-items-center">
+            <div class="row mt-n5">
+                <div class="col-10 col-md-6 mx-auto text-center">
+                    <h1 class="headingText mt-2 mb-3 pb-2">Anshum Gill</h1>
+                    <p class="intro contentText text-center lead p-3">
+                        Hi! I'm a B.Tech CSE Graduate and currently I'm working at Hughes Systique as an Engineer Trainee.
+                        I have knowledge in various domains such as IoT, ML, Deep Learning, Neural Networks,
+                        Frontend Development etc. I've done most of my development in Python but am open to any language.
+                    </p>
+                    <div class="socials mt-3 nonImpText">
+                        <div class="d-flex flex-row justify-content-around">
+                            <a class="text-reset" href="https://www.linkedin.com/in/anshum-gill/" target="_blank"><i data-feather="linkedin" fill="currentColor" stroke="none" height="20"></i></a>
+                            <a class="text-reset" href="https://www.github.com/anshumgill" target="_blank"><i data-feather="github" height="20"></i></a>
+                            <a class="text-reset" href="https://www.instagram.com/anshum_gill/" target="_blank"><i data-feather="instagram" height="20"></i></a>
+                            <a class="text-reset" href="https://www.facebook.com/AnShUmGilL1997/" target="_blank"><i data-feather="facebook" fill="currentColor" stroke="none" height="20"></i></a>
+                        </div>                             
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex flex-column align-items-center mt-4" id="projects">
+            <div>
+                <p class="display-3 headingText text-center">Things I've Worked On</p>
+            </div>
+            <div class="mb-5">
+                <p class="h3 text-center contentText">If you think I'll be a great addition to your team?<br/> Here's my <a class="text-reset text-decoration-none px-1 resume" href="{{ url_for('static',filename='Resume.pdf') }}" target="_blank">resume.</a></p>
+            </div>
+            <div class="card shadow contentText">
+                <div class="card-body">
+                    <h4 class="card-title mb-4">Pneumothorax Identification</h4>
+                    <div class="row">
+                        <div class="col-12 col-md-6 pd-2 card-text">
+                            <p>Internship project in which Image segmentation was performed on a dataset consisting of Lung X-rays and masks were drawn for predicted areas of Pneumothorax in the X-ray using Encoded UNet Network.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 pd-2">
+                            <div class="d-flex flex-column">
+                                <div class="icons align-self-end">
+                                    <a class="text-white px-1" href="https://github.com/AnshumGill/dl-pneumothorax" target="_blank">
+                                        <i data-toggle="tooltip" data-placement="top" title="Repository" data-feather="github"></i>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-row flex-wrap mt-2">
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Deep Learning</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">ResUNet</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Image Segmentation</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Keras</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="card shadow contentText">
+                <div class="card-body">
+                    <h4 class="card-title mb-4">Image Classification</h4>
+                    <div class="row">
+                        <div class="col-12 col-md-6 pd-2 card-text">
+                            <p>Image Classification was performed using Random Forest and SVM Classifier on 200 photos of flowers clicked personally containing 10 classes each with 20 pictures.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 pd-2">
+                            <div class="d-flex flex-column">
+                                <div class="icons align-self-end">
+                                    <a class="text-white px-1" href="https://github.com/AnshumGill/python-ml-flower" target="_blank">
+                                        <i data-toggle="tooltip" data-placement="top" title="Repository" data-feather="github"></i>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-row flex-wrap mt-2">
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Python</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Machine Learning</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Random Forest</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">SVM</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Logistic Regression</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>     
+            <div class="card shadow contentText">
+                <div class="card-body">
+                    <h4 class="card-title mb-4">Ecommerce Website
+                    </h4>
+                    <div class="row">
+                        <div class="col-12 col-md-6 pd-2 card-text">
+                            <p>Django based ecommerce website. This was my first website which I developed on Django framework. Decided to learn Django and make an ecommerce website for my mother's bakery.<br/>This was hosted on an EC2 instance on AWS where requests were handled by uWSGI and NGINX.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 pd-2">
+                            <div class="d-flex flex-column">
+                                <div class="icons align-self-end">
+                                    <a class="text-white px-1" href="https://github.com/AnshumGill/django-ecommerce" target="_blank">
+                                        <i data-toggle="tooltip" data-placement="top" title="Repository" data-feather="github"></i>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-row flex-wrap mt-2">
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Django</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">NGINX</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">uWSGI</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">PostgreSQL</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">2FA</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">RazorPay</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">MailChimp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>  
+            <div class="card shadow contentText">
+                <div class="card-body">
+                    <h4 class="card-title mb-4">Voting Application
+                    </h4>
+                    <div class="row">
+                        <div class="col-12 col-md-6 pd-2 card-text">
+                            <p>An application where users can cast vote online. Can be scaled from inter company voting to local or national government elections. Blockchain is used to cast and verify votes to make it secure. Frontend is developed in Django.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 pd-2">
+                            <div class="d-flex flex-column">
+                                <div class="icons align-self-end">
+                                    <a class="text-white px-1" href="https://github.com/AnshumGill/django-voting" target="_blank">
+                                        <i data-toggle="tooltip" data-placement="top" title="Repository" data-feather="github"></i>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-row flex-wrap mt-2">
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Django</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Python</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Blockchain</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Truffle Suit</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">HTML</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">CSS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div> 
+            <div class="card shadow contentText">
+                <div class="card-body">
+                    <h4 class="card-title mb-4">Global Warming Assessment
+                    </h4>
+                    <div class="row">
+                        <div class="col-12 col-md-6 pd-2 card-text">
+                            <p>Using the GlobalLandTemperature Dataset from Kaggle change in Average Land Temperature a Regression Model was made for India with the help of which predictions were made for the future.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 pd-2">
+                            <div class="d-flex flex-column">
+                                <div class="icons align-self-end">
+                                    <a class="text-white px-1" href="https://github.com/AnshumGill/r-ml-climate" target="_blank">
+                                        <i data-toggle="tooltip" data-placement="top" title="Repository" data-feather="github"></i>
+                                    </a>
+                                    <a class="text-white px-1" href="https://github.com/AnshumGill/r-ml-climate/blob/master/Paper.pdf" target="_blank">
+                                        <i data-toggle="tooltip" data-placement="top" title="Paper" data-feather="file-text"></i>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-row flex-wrap mt-2">
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">R</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Machine Learning</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Regression</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>  
+            <div class="card shadow contentText">
+                <div class="card-body">
+                    <h4 class="card-title mb-4">EDA Projects
+                    </h4>
+                    <div class="row">
+                        <div class="col-12 col-md-6 pd-2 card-text">
+                            <p>EDA was performed after data preprocessing and cleaning to find relevant correlations.<br/>First was Ecommerce Dataset in which Yearly Amount Spent was derived as an equation of other relevant columns such as Avg. Session Length or Length of Membership.<br/>Second was Startups Dataset in which Profit was derived in terms of R&D and Marketing. 
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 pd-2">
+                            <div class="d-flex flex-column">
+                                <div class="icons align-self-end">
+                                    <a class="text-white px-1" href="https://github.com/AnshumGill/python-ml-ecommerce" target="_blank">
+                                        <i data-toggle="tooltip" data-placement="top" title="Repository" data-feather="github"></i>
+                                    </a>
+                                    <a class="text-white px-1" href="https://github.com/AnshumGill/python-ml-ecommerce/blob/master/Report.pdf" target="_blank">
+                                        <i data-toggle="tooltip" data-placement="top" title="Paper" data-feather="file-text"></i>
+                                    </a>
+                                    <a class="text-white px-1" href="https://github.com/AnshumGill/python-ml-startups" target="_blank">
+                                        <i data-toggle="tooltip" data-placement="top" title="Startups Repository" data-feather="github"></i>
+                                    </a>
+                                    <a class="text-white px-1" href="https://github.com/AnshumGill/python-ml-startups/blob/master/Report.pdf" target="_blank">
+                                        <i data-toggle="tooltip" data-placement="top" title="Startups Report" data-feather="file-text"></i>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-row flex-wrap mt-2">
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Python</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">EDA</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Pandas</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Numpy</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Regression</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="card shadow contentText">
+                <div class="card-body">
+                    <h4 class="card-title mb-4">Movie Ticket Reservation System
+                    </h4>
+                    <div class="row">
+                        <div class="col-12 col-md-6 pd-2 card-text">
+                            <p>A Movie Ticket Reservation System GUI application was developed in Python using Tkinter with database in SQLite as a college project.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 pd-2">
+                            <div class="d-flex flex-column">
+                                <div class="icons align-self-end">
+                                    <a class="text-white px-1" href="https://github.com/AnshumGill/python-movieticket" target="_blank">
+                                        <i data-toggle="tooltip" data-placement="top" title="Repository" data-feather="github"></i>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-row flex-wrap mt-2">
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Python</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">Tkinter</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">SQLite</p>
+                                    <p class="px-3 py-1 mx-1 tag rounded-pill">GUI</p>                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>    
+        </div>
+    </main>
+
+    <footer class="mt-auto">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col p-2 p-md-4 text-center">
+                    <p class="h2 contentText">Let's Get in touch</p> 
+                </div>
+            </div>
+            <div class="row pb-5 contentText">
+                <div class="col-12 col-md-6">
+                    <div class="d-flex flex-column align-items-center">
+                        <p class="h5 pb-1 footer-headings"><strong>REACH ME</strong></p>
+                        <div class="d-flex flex-row justify-content-around w-100 pt-2">
+                            <p class="text-center mb-0"><i data-feather="smartphone"></i><br/>+91-981129033</p>
+                            <p class="text-center mb-0"><i data-feather="mail"></i><br/>anshumgill@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 pt-4 pt-md-0">
+                    <div class="d-flex flex-column align-items-center h-100">
+                        <p class="h5 pb-1 footer-headings"><strong>SOCIAL</strong></p>
+                        <div class="d-flex flex-row justify-content-around w-100 pt-2 mt-auto">
+                            <a class="text-reset" href="https://www.linkedin.com/in/anshum-gill/" target="_blank"><i data-feather="linkedin" fill="currentColor" stroke="none"></i></a>
+                            <a class="text-reset" href="https://www.github.com/anshumgill" target="_blank"><i data-feather="github"></i></a>
+                            <a class="text-reset" href="https://www.instagram.com/anshum_gill/" target="_blank"><i data-feather="instagram"></i></a>
+                            <a class="text-reset" href="https://www.facebook.com/AnShUmGilL1997/" target="_blank"><i data-feather="facebook" fill="currentColor" stroke="none"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="./static/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="./static/js/popper.min.js"></script>
+    <script src="./static/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        feather.replace()
+    </script>
+
+</body>
+</html>

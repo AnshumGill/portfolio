@@ -1,0 +1,118 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #121212;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+@media (min-height: 556px){
+    .landing{
+        height:calc(100vh - 109px);
+    }
+}
+
+.headingText{
+    color:rgba(255,255,255,0.87);
+    /* font-size:xxx-large; */
+    font-weight: 800;
+}
+.contentText{
+    color:rgba(255,255,255,0.60);
+}
+.nonImpText{
+    color:rgba(255,255,255,0.38);
+}
+.navbar .collapse .navbar-nav .nav-link{
+    border-top:2px solid transparent;
+    transition: border-top 0.5s;
+
+}
+
+.navbar .collapse .navbar-nav .nav-link:hover{
+    border-top:2px solid;
+    border-image-source: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
+	border-image-slice:1;
+}
+
+.intro{
+    --borderWidth:2px;
+    background: #121212;
+    position: relative;
+    /* border-radius: var(--borderWidth); */
+}
+
+.intro:after{
+    content:'';
+    position: absolute;
+    top:calc(1 * var(--borderWidth));
+    left:calc(-1 * var(--borderWidth));
+    height:calc(100% - var(--borderWidth) * 2);
+    width:calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
+    /* border-radius: calc(2 * var(--borderWidth)); */
+    z-index: -1;
+    animation: gradient_animation 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+.card{
+    margin-bottom: 2rem;
+    background: 
+        linear-gradient(rgba(255,255,255,0.05),rgba(255,255,255,0.05)) 100% 100% no-repeat,
+        linear-gradient(rgba(18,18,18,1),rgba(18,18,18,1)) 100% 100% no-repeat;
+}
+
+@media (min-width: 992px){
+    .card{
+        max-width: 70vw;
+        margin-bottom: 2rem;
+        background: 
+            linear-gradient(rgba(255,255,255,0.05),rgba(255,255,255,0.05)) 100% 100% no-repeat,
+            linear-gradient(rgba(18,18,18,1),rgba(18,18,18,1)) 100% 100% no-repeat;
+    }
+}
+
+.tag{
+    background: 
+        linear-gradient(rgba(187,134,252,0.2),rgba(187,134,252,0.2)) 100% 100% no-repeat,
+        linear-gradient(rgba(18,18,18,1),rgba(18,18,18,1)) 100% 100% no-repeat;
+}
+
+.resume{
+    background: 
+        linear-gradient(rgba(187,134,252,0.5),rgba(187,134,252,0.5)) 100% 100% no-repeat, 
+        linear-gradient(rgba(18,18,18,1),rgba(18,18,18,1)) 100% 100% no-repeat;
+}
+
+footer{
+    background: 
+        linear-gradient(rgba(255,255,255,0.03),rgba(255,255,255,0.03)) 100% 100% no-repeat,
+        linear-gradient(rgba(18,18,18,1),rgba(18,18,18,1)) 100% 100% no-repeat;
+}
+
+.footer-headings{
+    border-bottom: 2px dashed rgba(255,255,255,0.60);
+}
+
+.icon{
+    font-size: xx-large;
+    border:2px solid;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 0.5rem 0.6rem;
+}
+
+@keyframes gradient_animation{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
