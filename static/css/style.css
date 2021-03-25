@@ -67,7 +67,7 @@ body{
 
 @media (min-width: 992px){
     .card{
-        max-width: 70vw;
+        width: 70vw;
         margin-bottom: 2rem;
         background: 
             linear-gradient(rgba(255,255,255,0.05),rgba(255,255,255,0.05)) 100% 100% no-repeat,
@@ -95,6 +95,14 @@ footer{
 
 .footer-headings{
     border-bottom: 2px dashed rgba(255,255,255,0.60);
+}
+
+.webdev-heading{
+    border-bottom: 2px dashed rgba(255,255,255,0.60);
+}
+
+.h5{
+    display: inline-block !important;
 }
 
 .icon{
